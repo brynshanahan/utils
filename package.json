@@ -3,22 +3,34 @@
   "version": "1.0.0",
   "dependencies": {
     "@juggle/resize-observer": "^3.1.3",
+    "glob": "^7.1.6",
     "intersection-observer": "^0.8.0"
   },
   "types": "./lib/@types",
   "scripts": {
     "dev": "npx concurrently 'yarn compile-code' 'yarn compile-types'",
-    "prod": "npx parcel build src/*/*.ts --out-dir ./lib && tsc",
+    "prod": "npx webpack --config ./scripts/webpack.prod.js && tsc",
     "compile-types": "node ./scripts/run-tsc.js",
-    "compile-code": "npx parcel watch src/*/*.ts --out-dir ./lib"
+    "compile-code": "npx webpack --config ./scripts/webpack.dev.js"
   },
   "peerDependencies": {
     "@juggle/resize-observer": "^3.1.3",
     "intersection-observer": "^0.8.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/plugin-transform-typescript": "^7.9.4",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0",
+    "babel-loader": "^8.1.0",
     "concurrently": "^5.1.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "loop-protect": "ojeytonwilliams/loop-protect#chore/migrate",
     "parcel": "^1.12.4",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
   }
 }
