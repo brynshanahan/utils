@@ -1,0 +1,17 @@
+{
+  "name": "utils",
+  "dependencies": {},
+  "scripts": {
+    "dev": "parcel watch src/*/*.ts",
+    "prod": "parcel build src/*/*.ts"
+  },
+  "main": "dist",
+  "peerDependencies": {
+    "@juggle/resize-observer": "^3.1.3",
+    "intersection-observer": "^0.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3",
+    "parcel": "^1.12.4"
+  }
+}
