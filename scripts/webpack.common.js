@@ -51,6 +51,10 @@ module.exports = mode => {
     resolve: {
       extensions: [".ts", ".tsx", ".js", ".json", ".jsx", ".css"]
     },
+    output: {
+      path: relative("../lib"),
+      libraryTarget: "umd"
+    },
     module: {
       rules: [JAVASCRIPT]
     }

@@ -1,6 +1,5 @@
 const merge = require("webpack-merge")
 const common = require("./webpack.common.js")
-const relative = require("./relative")
 
 module.exports = merge(common("dev"), {
   mode: "development",
