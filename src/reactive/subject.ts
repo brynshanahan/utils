@@ -1,5 +1,5 @@
 // const Symbol = str => str + '_' + (Math.random() * 10).toFixed(3)
-const subject = Symbol('subject')
+const subject = Symbol("subject")
 
 type Callback<Args extends [] = any[], Result = any> = (...args: Args) => Result
 
@@ -28,7 +28,7 @@ export default class Subject<EventTypes = { [key: string]: Array<any> }> {
       cancels: {},
       key() {
         return `listener_${this[subject].index++}`
-      },
+      }
     } as SubjectProperties<EventTypes>
 
     // Bind all the methods
@@ -40,13 +40,10 @@ export default class Subject<EventTypes = { [key: string]: Array<any> }> {
   }
 
   /* Listen to  */
-  on<Key extends keyof EventTypes>(
-    nameOrCallback: Key | Callback,
-    fn?: Callback<EventTypes[Key]>
-  ) {
+  on<Key extends keyof EventTypes>(nameOrCallback: Key | Callback, fn?: Callback<EventTypes[Key]>) {
     let name = nameOrCallback as keyof EventTypes
     let callback = fn as Callback | Callback<EventTypes[Key]>
-    if (!fn && typeof nameOrCallback === 'function') {
+    if (!fn && typeof nameOrCallback === "function") {
       callback = nameOrCallback as Callback
       /* Listen to all events */
       name = (subject as unknown) as keyof EventTypes
@@ -55,15 +52,11 @@ export default class Subject<EventTypes = { [key: string]: Array<any> }> {
     // Every event listener is given it's own key
     const key = this[subject].key()
 
-    const eventNames =
-      typeof name === 'string'
-        ? (name.split(' ') as (keyof EventTypes)[])
-        : [name]
+    const eventNames = typeof name === "string" ? (name.split(" ") as (keyof EventTypes)[]) : [name]
 
     for (const eventName of eventNames) {
       // If this is the first listener of type eventName then listeners[eventName] will be empty
-      if (!this[subject].listeners[eventName])
-        this[subject].listeners[eventName] = {}
+      if (!this[subject].listeners[eventName]) this[subject].listeners[eventName] = {}
 
       // Add the listener to the listener object
       this[subject].listeners[eventName][key] = callback
@@ -101,9 +94,7 @@ export default class Subject<EventTypes = { [key: string]: Array<any> }> {
     }
     // If this even is in the listeners object
     if (this[subject].listeners[name]) {
-      return Object.values(this[subject].listeners[name]).map((fn) =>
-        fn(...args)
-      )
+      return Object.values(this[subject].listeners[name]).map(fn => fn(...args))
     }
   }
 
@@ -139,20 +130,17 @@ export default class Subject<EventTypes = { [key: string]: Array<any> }> {
           const handler = this[subject].listeners[name][key]
           prev = fn(prev, handler, key)
         }
-      },
+      }
     }
   }
 
-  reduce<T extends keyof EventTypes>(
-    name: T,
-    ...args: EventTypes[T]
-  ): EventTypes[T][0] {
+  reduce<T extends keyof EventTypes>(name: T, ...args: EventTypes[T]): EventTypes[T][0] {
     const [value, ...rest] = args
     let prev
     if (this[subject].listeners[name]) {
       return this.getHandlers(name).reduce((memo, fn) => {
         const v = fn(memo, ...rest)
-        if (typeof v !== 'undefined') {
+        if (typeof v !== "undefined") {
           prev = v
           return v
         } else {
@@ -164,16 +152,13 @@ export default class Subject<EventTypes = { [key: string]: Array<any> }> {
     return value
   }
 
-  async asyncReduce<T extends keyof EventTypes>(
-    name: T,
-    ...args: EventTypes[T]
-  ): EventTypes[T][0] {
+  async asyncReduce<T extends keyof EventTypes>(name: T, ...args: EventTypes[T]): EventTypes[T][0] {
     const [value, ...rest] = args
     let prev
     if (this[subject].listeners[name]) {
       return Object.values(this[subject].listeners[name]).reduce((last, fn) => {
         const v = fn(last, ...rest)
-        if (typeof v !== 'undefined') {
+        if (typeof v !== "undefined") {
           last = v
           return v
         }
@@ -197,6 +182,6 @@ export default class Subject<EventTypes = { [key: string]: Array<any> }> {
   }
 
   destroy() {
-    Object.values(this[subject].cancels).forEach((fn) => fn())
+    Object.values(this[subject].cancels).forEach(fn => fn())
   }
 }

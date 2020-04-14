@@ -1,0 +1,1257 @@
+{
+  "program": {
+    "fileInfos": {
+      "../../node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7",
+        "signature": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
+        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+      },
+      "../../node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1",
+        "signature": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743",
+        "signature": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743"
+      },
+      "../../node_modules/typescript/lib/lib.es2018.d.ts": {
+        "version": "9c67dcc7ca897b61f58d57d487bc9f07950546e5ac8701cbc41a8a4fec48b091",
+        "signature": "9c67dcc7ca897b61f58d57d487bc9f07950546e5ac8701cbc41a8a4fec48b091"
+      },
+      "../../node_modules/typescript/lib/lib.es2019.d.ts": {
+        "version": "0fc0f68d3f4d94aa65fab955592e4a9f2066e6f8ee2f66fcc45adf4037fc167b",
+        "signature": "0fc0f68d3f4d94aa65fab955592e4a9f2066e6f8ee2f66fcc45adf4037fc167b"
+      },
+      "../../node_modules/typescript/lib/lib.es2020.d.ts": {
+        "version": "585694acba05fe18d6ad9c9f662f3de3766779933efb9f2d8c482c1a92bf073c",
+        "signature": "585694acba05fe18d6ad9c9f662f3de3766779933efb9f2d8c482c1a92bf073c"
+      },
+      "../../node_modules/typescript/lib/lib.esnext.d.ts": {
+        "version": "391b7b55f424b8f658ba78a051650424c9c8667c1e77a5fa2c76888f7cf9dcd3",
+        "signature": "391b7b55f424b8f658ba78a051650424c9c8667c1e77a5fa2c76888f7cf9dcd3"
+      },
+      "../../node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed",
+        "signature": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed"
+      },
+      "../../node_modules/typescript/lib/lib.dom.iterable.d.ts": {
+        "version": "8329c3401aa8708426c7760f14219170f69a2cb77e4519758cec6f5027270faf",
+        "signature": "8329c3401aa8708426c7760f14219170f69a2cb77e4519758cec6f5027270faf"
+      },
+      "../../node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+        "version": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b",
+        "signature": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b"
+      },
+      "../../node_modules/typescript/lib/lib.scripthost.d.ts": {
+        "version": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9",
+        "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6",
+        "signature": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8",
+        "signature": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122",
+        "signature": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210",
+        "signature": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca",
+        "signature": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
+        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
+        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
+        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
+        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+      },
+      "../../node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0",
+        "signature": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "c2d60b2e558d44384e4704b00e6b3d154334721a911f094d3133c35f0917b408",
+        "signature": "c2d60b2e558d44384e4704b00e6b3d154334721a911f094d3133c35f0917b408"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f",
+        "signature": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c",
+        "signature": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6",
+        "signature": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46",
+        "signature": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46"
+      },
+      "../../node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": {
+        "version": "2958de3d25bfb0b5cdace0244e11c9637e5988920b99024db705a720ce6348e7",
+        "signature": "2958de3d25bfb0b5cdace0244e11c9637e5988920b99024db705a720ce6348e7"
+      },
+      "../../node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "85085a0783532dc04b66894748dc4a49983b2fbccb0679b81356947021d7a215",
+        "signature": "85085a0783532dc04b66894748dc4a49983b2fbccb0679b81356947021d7a215"
+      },
+      "../../node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+        "version": "5494f46d3a8a0329d13ddc37f8759d5288760febb51c92336608d1c06bb18d29",
+        "signature": "5494f46d3a8a0329d13ddc37f8759d5288760febb51c92336608d1c06bb18d29"
+      },
+      "../../node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+        "version": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62",
+        "signature": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62"
+      },
+      "../../node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+        "version": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8",
+        "signature": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8"
+      },
+      "../../node_modules/typescript/lib/lib.es2019.array.d.ts": {
+        "version": "7054111c49ea06f0f2e623eab292a9c1ae9b7d04854bd546b78f2b8b57e13d13",
+        "signature": "7054111c49ea06f0f2e623eab292a9c1ae9b7d04854bd546b78f2b8b57e13d13"
+      },
+      "../../node_modules/typescript/lib/lib.es2019.object.d.ts": {
+        "version": "989b95205f1189943fab0ce12a39c80570edf8f200aca60e0fdc500afc4d5859",
+        "signature": "989b95205f1189943fab0ce12a39c80570edf8f200aca60e0fdc500afc4d5859"
+      },
+      "../../node_modules/typescript/lib/lib.es2019.string.d.ts": {
+        "version": "e9bfd234b801c955459cde7109bebf6fd1b4814fd8b394942f5ba746828a6486",
+        "signature": "e9bfd234b801c955459cde7109bebf6fd1b4814fd8b394942f5ba746828a6486"
+      },
+      "../../node_modules/typescript/lib/lib.es2019.symbol.d.ts": {
+        "version": "5f2a476cdb4990b249077b46a6242979876e9bba5152e066d68fad77510ee328",
+        "signature": "5f2a476cdb4990b249077b46a6242979876e9bba5152e066d68fad77510ee328"
+      },
+      "../../node_modules/typescript/lib/lib.es2020.bigint.d.ts": {
+        "version": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255",
+        "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
+      },
+      "../../node_modules/typescript/lib/lib.es2020.promise.d.ts": {
+        "version": "4a44be5b17ae6385fcc9a486361f50231992d556c9298373ae0d38cfae9f4056",
+        "signature": "4a44be5b17ae6385fcc9a486361f50231992d556c9298373ae0d38cfae9f4056"
+      },
+      "../../node_modules/typescript/lib/lib.es2020.string.d.ts": {
+        "version": "01f1170ac78a31964a8a05cc46df7dc63d6911f683cb49586b27c49f54187a86",
+        "signature": "01f1170ac78a31964a8a05cc46df7dc63d6911f683cb49586b27c49f54187a86"
+      },
+      "../../node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts": {
+        "version": "1debec13dc47b66e7e5a5ceb3872ea7f141613148f6083ef6dc38626ee8c9a93",
+        "signature": "1debec13dc47b66e7e5a5ceb3872ea7f141613148f6083ef6dc38626ee8c9a93"
+      },
+      "../../node_modules/typescript/lib/lib.esnext.intl.d.ts": {
+        "version": "1377923021927244ea19433873b997ad8585533b0a56d5de29cda497f7842756",
+        "signature": "1377923021927244ea19433873b997ad8585533b0a56d5de29cda497f7842756"
+      },
+      "../../node_modules/typescript/lib/lib.esnext.full.d.ts": {
+        "version": "b209a815904a485328677714ef8c4ddd2dcf4040154fa204d25cbf31cd4ff0f3",
+        "signature": "b209a815904a485328677714ef8c4ddd2dcf4040154fa204d25cbf31cd4ff0f3"
+      },
+      "../../src/reactive/subject.ts": {
+        "version": "c95182d5b8dc0281d986095f18c837759b7b719e04e4af18149d7b14729a9969",
+        "signature": "4b1eb514cacfcca3e1a182d45d31d2eb1a3d0f27f364d1fa4f0b8646072976ce"
+      },
+      "../../src/async/loadable.ts": {
+        "version": "6b00752ee164a246aaa374871a5b28309bfcaef96e89e7e45e02ecbb993d528f",
+        "signature": "9b8ce6b56d602aa2d13f6f8df5d83faade47bc1a34723902c250ee9c27c039f6"
+      },
+      "../../src/async/promise-all-settled.ts": {
+        "version": "8c0978b980a2a46bed057fcf68b94881b4beaccd71c43d1e2f88c3232af432f6",
+        "signature": "e5e6f65474b094fd0cc9cdf8a1347fef8511b03f1c1afc22711cca245f4dfd26"
+      },
+      "../../src/element/is.ts": {
+        "version": "451497d00606bce9186d9878330d45c135cde989b37d154b758a5ba7f75a2188",
+        "signature": "a3f73fec75cf5dffa1af9732036f51b97695d5262a5854ffd6e5e07104022301"
+      },
+      "../../src/element/on.ts": {
+        "version": "5eb673033d04df06b55165a824550f8263553bd3010278b7d4d6890875849bd9",
+        "signature": "2336966e2d96cb24cd9a0b1e668289e227b3ea438539b83d3a31d9cc9b5ba343"
+      },
+      "../../src/element/parse-dataset.ts": {
+        "version": "57e83adcb1a46eb385115b3f1a61d328c1f10b9da79ff8dd0e683f9a2b8be46d",
+        "signature": "d1d28b150371170229741133f0cf3314cf066714840b0ea4153765d2edc7cd47"
+      },
+      "../../src/element/proxy-node.ts": {
+        "version": "774ab8666b28c73040f00625fd2b1412a03c4c7f5d8ffe22446124e14978b61b",
+        "signature": "2941ee6aadb43361eafbe81589b1cde88fe9a136e6887f2792214b1f04699bac"
+      },
+      "../../src/element/temp-node.ts": {
+        "version": "627743d403a749b2cf895cfa74d428e048e01f7bfbdfe7c36f6f66b7374afdeb",
+        "signature": "03fadd60a637645eeafbdf31647e145cf20dab77197ef4349bba9e08fab64ab9"
+      },
+      "../../src/object/from-entries.ts": {
+        "version": "2425ea99fe10af09283171bdd2a6cf24f0b091f8af76ede96cc2bae1ba617e32",
+        "signature": "83ed7d2c28d7b26b4050739c89b758471ff87f2e87e74d6f8f211b99db94f6ea"
+      },
+      "../../src/object/run-inherited-method.ts": {
+        "version": "98b20cdb303d82ea91182e3e31834446edae46d10269ca51ffb06309c19a737e",
+        "signature": "ee075b468d285fb0ad45a10e903ca3af25c21602f0088a6a652ede841f5b2d40"
+      },
+      "../../src/reactive/observable.ts": {
+        "version": "04c8a22894236f78de54688c30f999ab37f021e1b04e53584623df65636feb10",
+        "signature": "d1fd9a2b25bcdcffa90c28810dbd2ac616dc817929c40ed9d4a190d195f8de9a"
+      },
+      "../../src/observers/create-intersection-observable.ts": {
+        "version": "f30a37230e3729909dd8ea5d4bb32f0b60616f7e9346372d2f83801bda207bd6",
+        "signature": "f979069fdb62085f723dd2da61ecff0e0c4d524f66ff64d345fc4d195d303bfa"
+      },
+      "../../src/observers/create-mutation-observer.ts": {
+        "version": "23df326b66bd96fad51f2bec8aba1c850f7735d5397169f55a8f210536c4189b",
+        "signature": "6bfd133a0dcbfba6cafbbdba74d58d32435d67e1e6c33acb2bfefa6dd59b12e5"
+      },
+      "../../node_modules/@juggle/resize-observer/lib/domrectreadonly.d.ts": {
+        "version": "19b7304db4a8e33130f494fe2b7e31519033370ccd433703d640f1562718af16",
+        "signature": "19b7304db4a8e33130f494fe2b7e31519033370ccd433703d640f1562718af16"
+      },
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserversize.d.ts": {
+        "version": "5d7856b19ad0c12f5576e44c041f6a29e1d2809afe52a5bf25927d254813133d",
+        "signature": "5d7856b19ad0c12f5576e44c041f6a29e1d2809afe52a5bf25927d254813133d"
+      },
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserverentry.d.ts": {
+        "version": "0947a721e45565a79f7b54c65549c28dd47e23362805e2d5c161fa7c35099f56",
+        "signature": "0947a721e45565a79f7b54c65549c28dd47e23362805e2d5c161fa7c35099f56"
+      },
+      "../../node_modules/@juggle/resize-observer/lib/resizeobservercallback.d.ts": {
+        "version": "fda5ce2688395ea5116d61cbfcce51572ff4a552320018fe61acc126d2396ec5",
+        "signature": "fda5ce2688395ea5116d61cbfcce51572ff4a552320018fe61acc126d2396ec5"
+      },
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserverboxoptions.d.ts": {
+        "version": "74e473cd4d82d3fbb5a1e1184c08434ff47a092210d21fc8e12be4414c663ef4",
+        "signature": "74e473cd4d82d3fbb5a1e1184c08434ff47a092210d21fc8e12be4414c663ef4"
+      },
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserveroptions.d.ts": {
+        "version": "32bfdd2bbcf3556ad9d9649e55fbb5f13be9f51d111c8c63c1bb2ebe171c8fa1",
+        "signature": "32bfdd2bbcf3556ad9d9649e55fbb5f13be9f51d111c8c63c1bb2ebe171c8fa1"
+      },
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserver.d.ts": {
+        "version": "02a7893bb8b6af9b2bf0bdd1b6c1649ea57a474d20328b7743c5498f6c1d35a5",
+        "signature": "02a7893bb8b6af9b2bf0bdd1b6c1649ea57a474d20328b7743c5498f6c1d35a5"
+      },
+      "../../node_modules/@juggle/resize-observer/lib/exports/resize-observer.d.ts": {
+        "version": "9d259d8f89af7fec5790a485a1bb915c04cb9007f34e80b1f2bd3d6f09971b8e",
+        "signature": "9d259d8f89af7fec5790a485a1bb915c04cb9007f34e80b1f2bd3d6f09971b8e"
+      },
+      "../../src/observers/create-resize-observable.ts": {
+        "version": "e331962b3ba9771a7d393504a0c8bdb7ad5ac1b1f52bc44c6cdebb242dbc1a31",
+        "signature": "1be6d0c32bd4f65160beca47962e7875a3e2dc0aa8917a0fce78f537ce953721"
+      },
+      "../../src/reactive/reactive.ts": {
+        "version": "2303345bc2c7c8f8ff71773be2d52d7992f0c90527eee22dd1253240b8aeb677",
+        "signature": "d969cdf6c92ad343d2f738d040158bf1ed8ea0bb0aa86c1516d003a12ebcdf8b"
+      },
+      "../../src/reactive/stateful.ts": {
+        "version": "2470b216e7d0227d9d6e1061813451d2678443f2a44ae6d1d2e9874b823fa596",
+        "signature": "2adae49b8a804d87152a8cfbc058cd9279ff2bc17eafdbfa3498a5ef2c12cceb"
+      },
+      "../../src/reactive/tree/traverse-depth.ts": {
+        "version": "7a1af4bd3f8599259b5e27545a3a222d3de7864a17f7828d2f8a0b316f210cd0",
+        "signature": "c77ff314bb8976cfabf34377ef6565da73de1a5575dbf87bdf2808b639ade28f"
+      },
+      "../../src/reactive/tree/traverse.ts": {
+        "version": "bb9fa647c9985fc036e037a8fdf595d754bb0a58245adf7edf94b887238ff80a",
+        "signature": "d2d1a6fc3456a857a8aeafbf93798f66c21ab875e2b3c6928e777f30d3070a76"
+      },
+      "../../src/tree/traverse-depth.ts": {
+        "version": "7a1af4bd3f8599259b5e27545a3a222d3de7864a17f7828d2f8a0b316f210cd0",
+        "signature": "c77ff314bb8976cfabf34377ef6565da73de1a5575dbf87bdf2808b639ade28f"
+      },
+      "../../src/tree/traverse.ts": {
+        "version": "bb9fa647c9985fc036e037a8fdf595d754bb0a58245adf7edf94b887238ff80a",
+        "signature": "d2d1a6fc3456a857a8aeafbf93798f66c21ab875e2b3c6928e777f30d3070a76"
+      },
+      "../../src/types/callback.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "23748b37e67ed2050e9e5b7aa0008e1b1f798e8fc11748ff87b6d7242f492d05"
+      },
+      "../../src/types/element-type.ts": {
+        "version": "046f3b1bb5de77c70f83e3190f0649117dc24da72101d1865a9dbc98b6a68170",
+        "signature": "0350171a467ae6c4f30ea5ff1f8653f790c9ef53bec63c1ab7230af9dde45001"
+      },
+      "../../src/types/iterable.ts": {
+        "version": "66d9533ff40c55fa60b780b2c226a77536b777742eccda05d172811853c43f0f",
+        "signature": "9a3d973b3470f9a61e77b254c41dc90e40c63f58eb0b4a9819b10a23f0aa88d8"
+      },
+      "../../node_modules/@types/q/index.d.ts": {
+        "version": "57427a9a368f8f0ee4ce03c36a762e19166756b95ab688948b29be553b24a78a",
+        "signature": "57427a9a368f8f0ee4ce03c36a762e19166756b95ab688948b29be553b24a78a"
+      }
+    },
+    "options": {
+      "outDir": "./",
+      "composite": true,
+      "sourceMap": true,
+      "strict": false,
+      "noImplicitReturns": false,
+      "noImplicitAny": true,
+      "module": 99,
+      "moduleResolution": 2,
+      "esModuleInterop": true,
+      "declarationMap": true,
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+      "declaration": true,
+      "target": 99,
+      "allowJs": true,
+      "downlevelIteration": true,
+      "emitDeclarationOnly": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "suppressExcessPropertyErrors": true,
+      "watch": true,
+      "configFilePath": "../../tsconfig.json"
+    },
+    "referencedMap": {
+      "../../src/async/loadable.ts": [
+        "../../src/reactive/subject.ts"
+      ],
+      "../../src/element/temp-node.ts": [
+        "../../src/element/is.ts"
+      ],
+      "../../src/observers/create-intersection-observable.ts": [
+        "../../src/reactive/observable.ts"
+      ],
+      "../../src/observers/create-mutation-observer.ts": [
+        "../../src/reactive/observable.ts"
+      ],
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserverentry.d.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/domrectreadonly.d.ts",
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserversize.d.ts"
+      ],
+      "../../node_modules/@juggle/resize-observer/lib/resizeobservercallback.d.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserver.d.ts",
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserverentry.d.ts"
+      ],
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserveroptions.d.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserverboxoptions.d.ts"
+      ],
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserver.d.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/resizeobservercallback.d.ts",
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserveroptions.d.ts"
+      ],
+      "../../node_modules/@juggle/resize-observer/lib/exports/resize-observer.d.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserver.d.ts",
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserverentry.d.ts"
+      ],
+      "../../src/observers/create-resize-observable.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/exports/resize-observer.d.ts",
+        "../../src/reactive/observable.ts"
+      ],
+      "../../src/reactive/reactive.ts": [
+        "../../src/reactive/subject.ts"
+      ],
+      "../../src/reactive/stateful.ts": [
+        "../../src/reactive/subject.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "../../src/async/loadable.ts": [
+        "../../src/reactive/subject.ts"
+      ],
+      "../../src/observers/create-intersection-observable.ts": [
+        "../../src/reactive/observable.ts"
+      ],
+      "../../src/observers/create-mutation-observer.ts": [
+        "../../src/reactive/observable.ts"
+      ],
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserverentry.d.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/domrectreadonly.d.ts",
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserversize.d.ts"
+      ],
+      "../../node_modules/@juggle/resize-observer/lib/resizeobservercallback.d.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserver.d.ts",
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserverentry.d.ts"
+      ],
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserveroptions.d.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserverboxoptions.d.ts"
+      ],
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserver.d.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/resizeobservercallback.d.ts",
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserveroptions.d.ts"
+      ],
+      "../../node_modules/@juggle/resize-observer/lib/exports/resize-observer.d.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserver.d.ts",
+        "../../node_modules/@juggle/resize-observer/lib/resizeobserverentry.d.ts"
+      ],
+      "../../src/observers/create-resize-observable.ts": [
+        "../../node_modules/@juggle/resize-observer/lib/exports/resize-observer.d.ts",
+        "../../src/reactive/observable.ts"
+      ],
+      "../../src/reactive/stateful.ts": [
+        "../../src/reactive/subject.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "../../node_modules/typescript/lib/lib.es5.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.d.ts",
+      "../../node_modules/typescript/lib/lib.es2016.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.d.ts",
+      "../../node_modules/typescript/lib/lib.es2018.d.ts",
+      "../../node_modules/typescript/lib/lib.es2019.d.ts",
+      "../../node_modules/typescript/lib/lib.es2020.d.ts",
+      "../../node_modules/typescript/lib/lib.esnext.d.ts",
+      "../../node_modules/typescript/lib/lib.dom.d.ts",
+      "../../node_modules/typescript/lib/lib.dom.iterable.d.ts",
+      "../../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "../../node_modules/typescript/lib/lib.scripthost.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../../node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "../../node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
+      "../../node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "../../node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "../../node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "../../node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "../../node_modules/typescript/lib/lib.es2019.array.d.ts",
+      "../../node_modules/typescript/lib/lib.es2019.object.d.ts",
+      "../../node_modules/typescript/lib/lib.es2019.string.d.ts",
+      "../../node_modules/typescript/lib/lib.es2019.symbol.d.ts",
+      "../../node_modules/typescript/lib/lib.es2020.bigint.d.ts",
+      "../../node_modules/typescript/lib/lib.es2020.promise.d.ts",
+      "../../node_modules/typescript/lib/lib.es2020.string.d.ts",
+      "../../node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
+      "../../node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "../../node_modules/typescript/lib/lib.esnext.full.d.ts",
+      [
+        "../../src/reactive/subject.ts",
+        [
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 136,
+            "length": 5,
+            "code": 2344,
+            "category": 1,
+            "messageText": {
+              "messageText": "Type 'any[]' does not satisfy the constraint '[]'.",
+              "category": 1,
+              "code": 2344,
+              "next": [
+                {
+                  "messageText": "Types of property 'length' are incompatible.",
+                  "category": 1,
+                  "code": 2326,
+                  "next": [
+                    {
+                      "messageText": "Type 'number' is not assignable to type '0'.",
+                      "category": 1,
+                      "code": 2322
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 305,
+            "length": 8,
+            "code": 2344,
+            "category": 1,
+            "messageText": {
+              "messageText": "Type 'Types[k]' does not satisfy the constraint '[]'.",
+              "category": 1,
+              "code": 2344,
+              "next": [
+                {
+                  "messageText": "Type 'Types[keyof Types]' is not assignable to type '[]'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Type 'Types[string] | Types[number] | Types[symbol]' is not assignable to type '[]'.",
+                      "category": 1,
+                      "code": 2322,
+                      "next": [
+                        {
+                          "messageText": "Type 'Types[string]' is not assignable to type '[]'.",
+                          "category": 1,
+                          "code": 2322
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 1134,
+            "length": 15,
+            "code": 2344,
+            "category": 1,
+            "messageText": {
+              "messageText": "Type 'EventTypes[Key]' does not satisfy the constraint '[]'.",
+              "category": 1,
+              "code": 2344,
+              "next": [
+                {
+                  "messageText": "Type 'EventTypes[keyof EventTypes]' is not assignable to type '[]'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Type 'EventTypes[string] | EventTypes[number] | EventTypes[symbol]' is not assignable to type '[]'.",
+                      "category": 1,
+                      "code": 2322,
+                      "next": [
+                        {
+                          "messageText": "Type 'EventTypes[string]' is not assignable to type '[]'.",
+                          "category": 1,
+                          "code": 2322
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 1249,
+            "length": 15,
+            "code": 2344,
+            "category": 1,
+            "messageText": "Type 'EventTypes[Key]' does not satisfy the constraint '[]'."
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 1930,
+            "length": 39,
+            "messageText": "Type 'string' cannot be used to index type '{ [k in keyof EventTypes]: { [l: string]: Callback<EventTypes[k], any>; }; }[keyof EventTypes]'.",
+            "category": 1,
+            "code": 2536
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 2656,
+            "length": 22,
+            "messageText": "A rest parameter must be of an array type.",
+            "category": 1,
+            "code": 2370
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 3086,
+            "length": 13,
+            "code": 2344,
+            "category": 1,
+            "messageText": "Type 'EventTypes[T]' does not satisfy the constraint '[]'."
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 3295,
+            "length": 34,
+            "code": 2344,
+            "category": 1,
+            "messageText": {
+              "messageText": "Type '[Callback<EventTypes[T], any>, string?]' does not satisfy the constraint '[]'.",
+              "category": 1,
+              "code": 2344,
+              "next": [
+                {
+                  "messageText": "Types of property 'length' are incompatible.",
+                  "category": 1,
+                  "code": 2326,
+                  "next": [
+                    {
+                      "messageText": "Type '1 | 2' is not assignable to type '0'.",
+                      "category": 1,
+                      "code": 2322,
+                      "next": [
+                        {
+                          "messageText": "Type '1' is not assignable to type '0'.",
+                          "category": 1,
+                          "code": 2322
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 3305,
+            "length": 13,
+            "code": 2344,
+            "category": 1,
+            "messageText": {
+              "messageText": "Type 'EventTypes[T]' does not satisfy the constraint '[]'.",
+              "category": 1,
+              "code": 2344,
+              "next": [
+                {
+                  "messageText": "Type 'EventTypes[keyof EventTypes]' is not assignable to type '[]'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 3596,
+            "length": 34,
+            "code": 2344,
+            "category": 1,
+            "messageText": "Type '[Callback<EventTypes[T], any>, string?]' does not satisfy the constraint '[]'."
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 3606,
+            "length": 13,
+            "code": 2344,
+            "category": 1,
+            "messageText": "Type 'EventTypes[T]' does not satisfy the constraint '[]'."
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 3841,
+            "length": 52,
+            "code": 2344,
+            "category": 1,
+            "messageText": {
+              "messageText": "Type '[EventTypes[T][0], Callback<EventTypes[T], any>, string?]' does not satisfy the constraint '[]'.",
+              "category": 1,
+              "code": 2344,
+              "next": [
+                {
+                  "messageText": "Types of property 'length' are incompatible.",
+                  "category": 1,
+                  "code": 2326,
+                  "next": [
+                    {
+                      "messageText": "Type '2 | 3' is not assignable to type '0'.",
+                      "category": 1,
+                      "code": 2322,
+                      "next": [
+                        {
+                          "messageText": "Type '2' is not assignable to type '0'.",
+                          "category": 1,
+                          "code": 2322
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 3842,
+            "length": 16,
+            "messageText": "Type '0' cannot be used to index type 'EventTypes[T]'.",
+            "category": 1,
+            "code": 2536
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 3869,
+            "length": 13,
+            "code": 2344,
+            "category": 1,
+            "messageText": "Type 'EventTypes[T]' does not satisfy the constraint '[]'."
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 3910,
+            "length": 16,
+            "messageText": "Type '0' cannot be used to index type 'EventTypes[T]'.",
+            "category": 1,
+            "code": 2536
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4198,
+            "length": 22,
+            "messageText": "A rest parameter must be of an array type.",
+            "category": 1,
+            "code": 2370
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4223,
+            "length": 16,
+            "messageText": "Type '0' cannot be used to index type 'EventTypes[T]'.",
+            "category": 1,
+            "code": 2536
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4252,
+            "length": 16,
+            "messageText": "Type 'EventTypes[T]' must have a '[Symbol.iterator]()' method that returns an iterator.",
+            "category": 1,
+            "code": 2488
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4284,
+            "length": 4,
+            "messageText": "Variable 'prev' implicitly has type 'any' in some locations where its type cannot be determined.",
+            "category": 1,
+            "code": 7034
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4336,
+            "length": 231,
+            "code": 2322,
+            "category": 1,
+            "messageText": "Type 'void' is not assignable to type 'EventTypes[T][0]'."
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4410,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": "Argument of type '[EventTypes[T][0], ...any[]]' is not assignable to parameter of type 'EventTypes[T]'."
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4537,
+            "length": 4,
+            "messageText": "Variable 'prev' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7005
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4654,
+            "length": 22,
+            "messageText": "A rest parameter must be of an array type.",
+            "category": 1,
+            "code": 2370
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4679,
+            "length": 16,
+            "messageText": "The return type of an async function or method must be the global Promise<T> type.",
+            "category": 1,
+            "code": 1064
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4679,
+            "length": 16,
+            "messageText": "Type '0' cannot be used to index type 'EventTypes[T]'.",
+            "category": 1,
+            "code": 2536
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4708,
+            "length": 16,
+            "messageText": "Type 'EventTypes[T]' must have a '[Symbol.iterator]()' method that returns an iterator.",
+            "category": 1,
+            "code": 2488
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 4888,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": "Argument of type '[any, ...any[]]' is not assignable to parameter of type 'EventTypes[T]'."
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 5117,
+            "length": 13,
+            "code": 2344,
+            "category": 1,
+            "messageText": {
+              "messageText": "Type 'EventTypes[T]' does not satisfy the constraint '[]'.",
+              "category": 1,
+              "code": 2344,
+              "next": [
+                {
+                  "messageText": "Type 'EventTypes[keyof EventTypes]' is not assignable to type '[]'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 5231,
+            "length": 13,
+            "code": 2344,
+            "category": 1,
+            "messageText": {
+              "messageText": "Type 'EventTypes[T]' does not satisfy the constraint '[]'.",
+              "category": 1,
+              "code": 2344,
+              "next": [
+                {
+                  "messageText": "Type 'EventTypes[keyof EventTypes]' is not assignable to type '[]'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/reactive/subject.ts",
+            "start": 5335,
+            "length": 7,
+            "messageText": "A rest parameter must be of an array type.",
+            "category": 1,
+            "code": 2370
+          }
+        ]
+      ],
+      [
+        "../../src/async/loadable.ts",
+        [
+          {
+            "file": "../../src/async/loadable.ts",
+            "start": 397,
+            "length": 6,
+            "messageText": "Cannot find namespace 'NodeJS'.",
+            "category": 1,
+            "code": 2503
+          }
+        ]
+      ],
+      [
+        "../../src/async/promise-all-settled.ts",
+        [
+          {
+            "file": "../../src/async/promise-all-settled.ts",
+            "start": 275,
+            "length": 18,
+            "code": 2322,
+            "category": 1,
+            "messageText": {
+              "messageText": "Type '(promises: Promise<any>[]) => Promise<({ status: string; value: any; } | { status: string; reason: any; })[]>' is not assignable to type '{ <T extends readonly unknown[] | readonly [unknown]>(values: T): Promise<{ -readonly [P in keyof T]: PromiseSettledResult<T[P] extends PromiseLike<infer U> ? U : T[P]>; }>; <T>(values: Iterable<...>): Promise<...>; }'.",
+              "category": 1,
+              "code": 2322,
+              "next": [
+                {
+                  "messageText": "Type 'Promise<({ status: string; value: any; } | { status: string; reason: any; })[]>' is not assignable to type 'Promise<{ [x: string]: PromiseSettledResult<any>; }>'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Type '({ status: string; value: any; } | { status: string; reason: any; })[]' is not assignable to type '{ [x: string]: PromiseSettledResult<any>; }'.",
+                      "category": 1,
+                      "code": 2322,
+                      "next": [
+                        {
+                          "messageText": "Index signature is missing in type '({ status: string; value: any; } | { status: string; reason: any; })[]'.",
+                          "category": 1,
+                          "code": 2329
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      ],
+      "../../src/element/is.ts",
+      [
+        "../../src/element/on.ts",
+        [
+          {
+            "file": "../../src/element/on.ts",
+            "start": 563,
+            "length": 17,
+            "messageText": "Type 'M' cannot be used to index type 'GetEventMap<T>'.",
+            "category": 1,
+            "code": 2536
+          },
+          {
+            "file": "../../src/element/on.ts",
+            "start": 777,
+            "length": 8,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'Listener<GetEventMap<T>[M], T>' is not assignable to parameter of type 'EventListenerOrEventListenerObject'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'Listener<GetEventMap<T>[M], T>' is not assignable to type 'EventListener'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Types of parameters 'e' and 'evt' are incompatible.",
+                      "category": 1,
+                      "code": 2328,
+                      "next": [
+                        {
+                          "messageText": "Type 'Event' is not assignable to type 'GetEventMap<T>[M] & { target: T; }'.",
+                          "category": 1,
+                          "code": 2322,
+                          "next": [
+                            {
+                              "messageText": "Type 'Event' is not assignable to type 'GetEventMap<T>[M]'.",
+                              "category": 1,
+                              "code": 2322
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/element/on.ts",
+            "start": 895,
+            "length": 8,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'Listener<GetEventMap<T>[M], T>' is not assignable to parameter of type 'EventListenerOrEventListenerObject'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'Listener<GetEventMap<T>[M], T>' is not assignable to type 'EventListener'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          }
+        ]
+      ],
+      "../../src/element/parse-dataset.ts",
+      [
+        "../../src/element/proxy-node.ts",
+        [
+          {
+            "file": "../../src/element/proxy-node.ts",
+            "start": 20,
+            "length": 7,
+            "messageText": "Parameter 'targets' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../../src/element/proxy-node.ts",
+            "start": 29,
+            "length": 7,
+            "messageText": "Parameter 'actions' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../../src/element/proxy-node.ts",
+            "start": 566,
+            "length": 8,
+            "messageText": "Parameter 'elements' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../../src/element/proxy-node.ts",
+            "start": 645,
+            "length": 11,
+            "messageText": "'createProxy' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.",
+            "category": 1,
+            "code": 7023
+          },
+          {
+            "file": "../../src/element/proxy-node.ts",
+            "start": 657,
+            "length": 3,
+            "messageText": "Parameter 'obj' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../../src/element/proxy-node.ts",
+            "start": 662,
+            "length": 12,
+            "messageText": "Parameter 'actions' implicitly has an 'any[]' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../../src/element/proxy-node.ts",
+            "start": 686,
+            "length": 4,
+            "messageText": "'prox' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.",
+            "category": 1,
+            "code": 7022
+          },
+          {
+            "file": "../../src/element/proxy-node.ts",
+            "start": 942,
+            "length": 3,
+            "code": 2322,
+            "category": 1,
+            "messageText": {
+              "messageText": "Type '(target: any, prop: string | number | symbol, value: any) => void' is not assignable to type '(target: any, p: string | number | symbol, value: any, receiver: any) => boolean'.",
+              "category": 1,
+              "code": 2322,
+              "next": [
+                {
+                  "messageText": "Type 'void' is not assignable to type 'boolean'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          }
+        ]
+      ],
+      [
+        "../../src/element/temp-node.ts",
+        [
+          {
+            "file": "../../src/element/temp-node.ts",
+            "start": 1014,
+            "length": 13,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'querySelector' does not exist on type 'Element | Text'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'querySelector' does not exist on type 'Text'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/element/temp-node.ts",
+            "start": 1222,
+            "length": 16,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'querySelectorAll' does not exist on type 'Element | Text'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'querySelectorAll' does not exist on type 'Text'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          }
+        ]
+      ],
+      "../../src/object/from-entries.ts",
+      "../../src/object/run-inherited-method.ts",
+      [
+        "../../src/reactive/observable.ts",
+        [
+          {
+            "file": "../../src/reactive/observable.ts",
+            "start": 4055,
+            "length": 3,
+            "messageText": "Parameter 'arg' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          }
+        ]
+      ],
+      [
+        "../../src/observers/create-intersection-observable.ts",
+        [
+          {
+            "file": "../../src/observers/create-intersection-observable.ts",
+            "start": 1920,
+            "length": 23,
+            "code": 7016,
+            "category": 1,
+            "messageText": {
+              "messageText": "Could not find a declaration file for module 'intersection-observer'. '/Users/bryn/projects/utils/node_modules/intersection-observer/intersection-observer.js' implicitly has an 'any' type.",
+              "category": 1,
+              "code": 7016,
+              "next": [
+                {
+                  "messageText": "Try `npm install @types/intersection-observer` if it exists or add a new declaration (.d.ts) file containing `declare module 'intersection-observer';`",
+                  "category": 1,
+                  "code": 7035
+                }
+              ]
+            }
+          }
+        ]
+      ],
+      "../../src/observers/create-mutation-observer.ts",
+      "../../node_modules/@juggle/resize-observer/lib/domrectreadonly.d.ts",
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserversize.d.ts",
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserverentry.d.ts",
+      "../../node_modules/@juggle/resize-observer/lib/resizeobservercallback.d.ts",
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserverboxoptions.d.ts",
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserveroptions.d.ts",
+      "../../node_modules/@juggle/resize-observer/lib/resizeobserver.d.ts",
+      "../../node_modules/@juggle/resize-observer/lib/exports/resize-observer.d.ts",
+      "../../src/observers/create-resize-observable.ts",
+      [
+        "../../src/reactive/reactive.ts",
+        [
+          {
+            "file": "../../src/reactive/reactive.ts",
+            "start": 454,
+            "length": 3,
+            "code": 2345,
+            "category": 1,
+            "messageText": "Argument of type 'symbol' is not assignable to parameter of type 'string | number'."
+          },
+          {
+            "file": "../../src/reactive/reactive.ts",
+            "start": 499,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'string | number | symbol' is not assignable to parameter of type 'string | number'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'symbol' is not assignable to type 'string | number'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/reactive/reactive.ts",
+            "start": 606,
+            "length": 1,
+            "messageText": "Parameter 'f' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../../src/reactive/reactive.ts",
+            "start": 667,
+            "length": 7,
+            "messageText": "Expected 1-2 arguments, but got 0 or more.",
+            "category": 1,
+            "code": 2556,
+            "relatedInformation": [
+              {
+                "file": "../../src/reactive/subject.ts",
+                "start": 1088,
+                "length": 30,
+                "messageText": "An argument for 'nameOrCallback' was not provided.",
+                "category": 3,
+                "code": 6210
+              }
+            ]
+          }
+        ]
+      ],
+      [
+        "../../src/reactive/stateful.ts",
+        [
+          {
+            "file": "../../src/reactive/stateful.ts",
+            "start": 647,
+            "length": 9,
+            "messageText": "Parameter 'stateOrFn' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../../src/reactive/stateful.ts",
+            "start": 1760,
+            "length": 49,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ isFirstChange: boolean; }' is not assignable to parameter of type '{ prevState: S; currentState: any; recievedState: any; state: any; self: this; currentChanges: string[]; changed: string[]; isFirstChange: boolean; }'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type '{ isFirstChange: boolean; }' is missing the following properties from type '{ prevState: S; currentState: any; recievedState: any; state: any; self: this; currentChanges: string[]; changed: string[]; isFirstChange: boolean; }': prevState, currentState, recievedState, state, and 3 more.",
+                  "category": 1,
+                  "code": 2740
+                }
+              ]
+            }
+          },
+          {
+            "file": "../../src/reactive/stateful.ts",
+            "start": 2133,
+            "length": 7,
+            "messageText": "Rest parameter 'args' implicitly has an 'any[]' type.",
+            "category": 1,
+            "code": 7019
+          },
+          {
+            "file": "../../src/reactive/stateful.ts",
+            "start": 2361,
+            "length": 2,
+            "messageText": "Parameter 'fn' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          }
+        ]
+      ],
+      "../../src/reactive/tree/traverse-depth.ts",
+      "../../src/reactive/tree/traverse.ts",
+      "../../src/types/callback.ts",
+      "../../src/types/element-type.ts",
+      "../../src/types/iterable.ts",
+      "../../node_modules/@types/q/index.d.ts",
+      "../../src/tree/traverse-depth.ts",
+      "../../src/tree/traverse.ts"
+    ]
+  },
+  "version": "3.8.3"
+}
