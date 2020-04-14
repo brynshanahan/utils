@@ -6,7 +6,10 @@
     "glob": "^7.1.6",
     "intersection-observer": "^0.8.0"
   },
-  "types": "./lib/@types",
+  "types": "./lib",
+  "directories": {
+    "lib": "./lib"
+  },
   "scripts": {
     "dev": "npx concurrently 'yarn compile-code' 'yarn compile-types'",
     "prod": "npx webpack --config ./scripts/webpack.prod.js && tsc",

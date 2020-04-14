@@ -1,1 +1,0 @@
-{"version":3,"file":"create-resize-observable.d.ts","sourceRoot":"","sources":["../../../../src/observers/create-resize-observable.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,cAAc,IAAI,QAAQ,EAAE,MAAM,yBAAyB,CAAA;AACpE,OAAO,EAAE,oBAAoB,EAAE,MAAM,wBAAwB,CAAA;AAE7D,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,MAAM;QACd,cAAc,EAAE,OAAO,QAAQ,CAAA;KAChC;CACF;AAID,wBAAgB,sBAAsB,4CA+CrC"}
