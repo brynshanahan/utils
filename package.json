@@ -11,10 +11,8 @@
     "lib": "./lib"
   },
   "scripts": {
-    "dev": "npx concurrently 'yarn compile-code' 'yarn compile-types'",
-    "prod": "npx webpack --config ./scripts/webpack.prod.js && tsc",
-    "compile-types": "node ./scripts/run-tsc.js",
-    "compile-code": "npx webpack --config ./scripts/webpack.dev.js"
+    "dev": "npx tsc --watch",
+    "prod": "npx tsc"
   },
   "peerDependencies": {
     "@juggle/resize-observer": "^3.1.3",

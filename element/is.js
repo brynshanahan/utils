@@ -1,23 +1,23 @@
-export var is = {
-    script: function (t) {
+export const is = {
+    script(t) {
         return t.tagName === 'script';
     },
-    title: function (t) {
+    title(t) {
         return t.tagName === 'title';
     },
-    style: function (t) {
+    style(t) {
         return t.tagName === 'style';
     },
-    link: function (t) {
+    link(t) {
         return t.tagName === 'link';
     },
-    element: function (t) {
+    element(t) {
         return t.nodeType === Node.ELEMENT_NODE;
     },
-    text: function (t) {
+    text(t) {
         return t.nodeType === Node.TEXT_NODE;
     },
-    comment: function (t) {
+    comment(t) {
         return t.nodeType === Node.COMMENT_NODE;
     },
 };
