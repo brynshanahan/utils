@@ -1,17 +1,25 @@
-const TEMP = Symbol("nodey");
-function isTemp(element) {
-    return element[TEMP];
+/* Doesn't affect the real dom when being appended to */
+import { is } from "./is";
+const DRAFT = Symbol("nodey");
+function isDraft(element) {
+    return element[DRAFT];
 }
-export default function TempNode(element, parent) {
+export default function draftDom(element, parent) {
     const traps = {
         element,
         parent,
         childNodes: new Set(),
-        [TEMP]: true,
+        [DRAFT]: true,
         remove() {
-            if (isTemp(parent)) {
+            if (isDraft(parent)) {
                 parent && parent.childNodes.delete(this);
             }
+        },
+        get parentElement() {
+            return traps.parent || element.parentElement;
+        },
+        get parentNode() {
+            return traps.parent || element.parentElement;
         },
         get children() {
             let children = [];
@@ -23,14 +31,14 @@ export default function TempNode(element, parent) {
             return children;
         },
         get innerHTML() {
-            if (element.nodeType !== Node.ELEMENT_NODE)
+            if (!is.element(traps.element))
                 return undefined;
             let [start, end] = traps.element.outerHTML.split(traps.element.innerHTML);
             for (let node of traps.childNodes) {
-                if (node.nodeType === Node.ELEMENT_NODE) {
+                if (is.element(node)) {
                     start += node.innerHTML;
                 }
-                else if (node.nodeType === Node.TEXT_NODE) {
+                else if (is.text(node)) {
                     start += node.textContent;
                 }
             }
@@ -45,7 +53,15 @@ export default function TempNode(element, parent) {
             }
             return result;
         },
-        get innerText() { },
+        get innerText() {
+            let result = "";
+            for (let child of traps.childNodes) {
+                if (is.text(child)) {
+                    result += child.textContent;
+                }
+            }
+            return result;
+        },
         querySelector(query) {
             function runQuery(n) {
                 let matches = n.matches(query);
@@ -87,12 +103,14 @@ export default function TempNode(element, parent) {
             traps.childNodes.add(node);
         },
         append(node) {
+            if (isDraft(node))
+                node.remove();
             traps.childNodes.add(node);
         },
         appendTo(node) {
             let futureNodes = new Set();
             for (let child of traps.childNodes) {
-                if (isTemp(child)) {
+                if (isDraft(child)) {
                     futureNodes.add(child.element);
                     child.appendTo(traps.element);
                 }
@@ -109,6 +127,28 @@ export default function TempNode(element, parent) {
             node.append(traps.element);
         }
     };
+    const setTraps = {
+        innerHTML(html) {
+            const div = document.createElement("div");
+            div.innerHTML = html;
+            traps.childNodes.forEach(child => child.remove());
+            Array.from(div.childNodes).map(node => {
+                traps.append(draftDom(node, target));
+            });
+        },
+        innerText(text) {
+            const div = document.createElement("div");
+            div.innerText = text;
+            traps.childNodes.forEach(child => child.remove());
+            Array.from(div.childNodes).forEach(node => traps.append(draftDom(node, target)));
+        },
+        textContent(text) {
+            const div = document.createElement("div");
+            div.textContent = text;
+            traps.childNodes.forEach(child => child.remove());
+            Array.from(div.childNodes).forEach(node => traps.append(draftDom(node, target)));
+        }
+    };
     const target = new Proxy(element, {
         get(target, property) {
             if (property in traps) {
@@ -117,75 +157,20 @@ export default function TempNode(element, parent) {
             else {
                 return target[property];
             }
+        },
+        set(target, property, value) {
+            if (property in setTraps) {
+                return setTraps[property](value);
+            }
+            else {
+                console.log(`setting ${property} is not supported yet`);
+            }
         }
     });
     for (let child of element.childNodes) {
-        traps.childNodes.add(TempNode(child, target));
+        traps.childNodes.add(draftDom(child, target));
     }
     return target;
 }
-window.TempNode = TempNode;
-// export default class TempNode implements HTMLElement {
-//   childNodes: Set<Element | Text | TempNode>
-//   element: Nodey
-//   get children() {
-//     let children: Element[] = []
-//     for (let node of this.childNodes) {
-//       if (node.nodeType === Node.ELEMENT_NODE) {
-//         children.push(node)
-//       }
-//     }
-//     return children
-//   }
-//   constructor(element: Nodey) {
-//     this.childNodes = new Set()
-//     for (let node of element.childNodes) {
-//       this.childNodes.add(node)
-//     }
-//     this.element = element
-//   }
-//   get innerHTML() {
-//     let result = ""
-//     for (let child of this.childNodes) {
-//       result += is.element(child) ? child.innerHTML : child.textContent
-//     }
-//     return result
-//   }
-//   get textContent() {
-//     let result = ""
-//     for (let child of this.childNodes) {
-//       result += child.textContent
-//     }
-//     return result
-//   }
-//   querySelector(query: string) {
-//     for (let child of this.children) {
-//       let result = child.querySelector(query)
-//       if (result) return result
-//     }
-//     return null
-//   }
-//   matches (query:string) {
-//     return this.element.matches(query)
-//   }
-//   querySelectorAll(query: string) {
-//     const children = []
-//     for (let child of this.childNodes) {
-//       children.push(...child.querySelectorAll(query))
-//     }
-//     return children
-//   }
-//   appendChild(node: Nodey) {
-//     this.childNodes.add(node)
-//   }
-//   append(node: Nodey) {
-//     this.childNodes.add(node)
-//   }
-//   appendTo(node: Element) {
-//     for (let child of this.childNodes) {
-//       this.element.appendChild(child)
-//     }
-//     node.appendChild(this.element)
-//   }
-// }
-//# sourceMappingURL=temp-node.js.map
+window.draftDom = draftDom;
+//# sourceMappingURL=draft-dom.js.map

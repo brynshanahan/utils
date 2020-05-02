@@ -1,7 +1,11 @@
-export function traverseDepth(node, forEachNode) {
-    if (node.children.length) {
-        node.children.forEach(node => traverseDepth(node, forEachNode));
+export function* traverseDepth(node) {
+    if (node.children) {
+        for (let child of node.children) {
+            for (let n of traverseDepth(child)) {
+                yield n;
+            }
+        }
     }
-    forEachNode(node);
+    yield node;
 }
 //# sourceMappingURL=traverse-depth.js.map

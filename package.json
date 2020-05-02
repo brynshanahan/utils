@@ -12,9 +12,11 @@
   },
   "scripts": {
     "dev": "npx tsc --watch",
-    "prod": "npx tsc"
+    "prod": "npx tsc",
+    "test": "jest"
   },
   "peerDependencies": {
+    "@eddev/utils": "^1.0.0",
     "@juggle/resize-observer": "^3.1.3",
     "intersection-observer": "^0.8.0"
   },
@@ -24,9 +26,14 @@
     "@babel/plugin-transform-typescript": "^7.9.4",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-typescript": "^7.9.0",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@types/jest": "^25.2.1",
+    "babel-jest": "^25.4.0",
     "babel-loader": "^8.1.0",
     "concurrently": "^5.1.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
+    "jest": "^25.4.0",
+    "jsdom": "^16.2.2",
     "loop-protect": "ojeytonwilliams/loop-protect#chore/migrate",
     "parcel": "^1.12.4",
     "typescript": "^3.8.3",
