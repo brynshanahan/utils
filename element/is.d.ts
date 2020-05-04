@@ -6,5 +6,6 @@ export declare const is: {
     element(t: Element | ChildNode | Text): t is Element;
     text(t: Element | ChildNode | Text): t is Text;
     comment(t: any): t is Comment;
+    meta(t: any): t is HTMLMetaElement;
 };
 //# sourceMappingURL=is.d.ts.map

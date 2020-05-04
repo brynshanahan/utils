@@ -1,15 +1,15 @@
 export const is = {
     script(t) {
-        return t.tagName === "script";
+        return t.tagName === "SCRIPT";
     },
     title(t) {
-        return t.tagName === "title";
+        return t.tagName === "TITLE";
     },
     style(t) {
-        return t.tagName === "style";
+        return t.tagName === "STYLE";
     },
     link(t) {
-        return t.tagName === "link";
+        return t.tagName === "LINK";
     },
     element(t) {
         return t.nodeType === Node.ELEMENT_NODE;
@@ -19,6 +19,10 @@ export const is = {
     },
     comment(t) {
         return t.nodeType === Node.COMMENT_NODE;
+    },
+    meta(t) {
+        return t.tagName === "META";
     }
 };
+window.isTest = is;
 //# sourceMappingURL=is.js.map

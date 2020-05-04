@@ -12,8 +12,8 @@ export default function draftDom(element: Element | ChildNode, parent?: DraftNod
     childNodes: Set<Element | Text>;
     [DRAFT]: boolean;
     remove(): void;
-    readonly parentElement: DraftNode | HTMLElement;
-    readonly parentNode: DraftNode | HTMLElement;
+    readonly parentElement: HTMLElement | DraftNode;
+    readonly parentNode: HTMLElement | DraftNode;
     readonly children: Element[];
     readonly innerHTML: string;
     readonly textContent: string;

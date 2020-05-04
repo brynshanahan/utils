@@ -1,4 +1,4 @@
-import Subject from '../reactive/subject'
+import Subject from "../reactive/subject"
 
 type LoadableEvents = {
   progress: [
@@ -21,8 +21,7 @@ export class Loadable extends Subject<LoadableEvents> {
   loaded: number
 
   start: number = Date.now()
-  timeout?: string | NodeJS.Timeout
-  complete = false
+  timeout?: string | number
 
   constructor(resources: Promise<any>[], timeout = 0) {
     super()
@@ -45,25 +44,25 @@ export class Loadable extends Subject<LoadableEvents> {
     }
   }
 
+  get complete() {
+    return this.loaded === this.promises.length
+  }
+
   finished() {
     return new Promise(resolve => {
       if (this.complete) {
         resolve()
       } else {
-        this.once('complete', update => {
-          resolve()
-        })
+        this.once("complete", resolve)
       }
     })
   }
 
   private emitComplete() {
-    if (this.complete) return
-    this.complete = true
-    this.emit('complete', {
+    this.emit("complete", {
       percent: 1,
       start: this.start,
-      time: Date.now() - this.start,
+      time: Date.now() - this.start
     })
   }
 
@@ -71,10 +70,10 @@ export class Loadable extends Subject<LoadableEvents> {
     const update = {
       percent: this.loaded / this.promises.length,
       start: this.start,
-      time: Date.now() - this.start,
+      time: Date.now() - this.start
     }
 
-    this.emit('progress', update)
+    this.emit("progress", update)
 
     if (update.percent === 1) {
       this.emitComplete()
