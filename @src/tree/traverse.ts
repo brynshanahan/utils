@@ -1,5 +1,5 @@
 type Node<T> = {
-  children: T[]
+  children: IterableIterator<T>
 }
 
 export function* traverse<T extends Node<T>>(node: T): IterableIterator<T> {

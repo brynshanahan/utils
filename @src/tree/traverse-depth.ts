@@ -1,6 +1,5 @@
 type Node<T> = {
-  children: T[]
-  parent: T | null
+  children?: IterableIterator<T>
 }
 
 export function* traverseDepth<T extends Node<T>>(node: T): IterableIterator<T> {
