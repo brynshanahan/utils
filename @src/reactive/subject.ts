@@ -19,24 +19,13 @@ type SubjectProperties<Types> = {
 type GetElementType<T extends Array<any>> = T extends (infer U)[] ? U : never
 
 export default class Subject<EventTypes = { [key: string]: Array<any> }> {
-  [subject]: SubjectProperties<EventTypes>
-
-  constructor() {
-    this[subject] = {
-      index: 0,
-      listeners: {},
-      cancels: {},
-      key() {
-        return `listener_${this[subject].index++}`
-      }
-    } as SubjectProperties<EventTypes>
-
-    // Bind all the methods
-    this.on = this.on.bind(this)
-    this[subject].key = this[subject].key.bind(this)
-    this.emit = this.emit.bind(this)
-    this.once = this.once.bind(this)
-    this.destroy = this.destroy.bind(this)
+  [subject]: SubjectProperties<EventTypes> = {
+    index: 0,
+    listeners: {},
+    cancels: {},
+    key: () => {
+      return `listener_${this[subject].index++}`
+    }
   }
 
   /* Listen to  */

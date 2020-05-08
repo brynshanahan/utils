@@ -7,24 +7,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var _a;
 // const Symbol = str => str + '_' + (Math.random() * 10).toFixed(3)
 const subject = Symbol("subject");
 export default class Subject {
     constructor() {
-        this[subject] = {
+        this[_a] = {
             index: 0,
             listeners: {},
             cancels: {},
-            key() {
+            key: () => {
                 return `listener_${this[subject].index++}`;
             }
         };
-        // Bind all the methods
-        this.on = this.on.bind(this);
-        this[subject].key = this[subject].key.bind(this);
-        this.emit = this.emit.bind(this);
-        this.once = this.once.bind(this);
-        this.destroy = this.destroy.bind(this);
     }
     /* Listen to  */
     on(nameOrCallback, fn) {
@@ -157,4 +152,5 @@ export default class Subject {
         Object.values(this[subject].cancels).forEach(fn => fn());
     }
 }
+_a = subject;
 //# sourceMappingURL=subject.js.map

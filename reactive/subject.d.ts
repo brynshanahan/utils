@@ -16,7 +16,6 @@ export default class Subject<EventTypes = {
     [key: string]: Array<any>;
 }> {
     [subject]: SubjectProperties<EventTypes>;
-    constructor();
     on<Key extends keyof EventTypes>(nameOrCallback: Key | Callback, fn?: Callback<EventTypes[Key]>): () => void;
     emit<T extends keyof EventTypes>(name: T, ...args: EventTypes[T]): any[];
     getHandlers<T extends keyof EventTypes>(name: T): {
